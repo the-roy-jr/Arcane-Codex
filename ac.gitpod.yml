@@ -1,0 +1,10 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - init: npm install # or another setup command
+    command: npm start # or the command to run your dev server
+
+ports:
+  - port: 3000 # Replace with the port your app uses
+    onOpen: open-preview
